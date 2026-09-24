@@ -56,7 +56,6 @@ export class CalculatorService {
   }
 
   private calculatePercentage(amount: number, percent: number): number {
-    // Round half up to the nearest satang using integer arithmetic.
     return Math.round((amount * percent) / 100)
   }
 }

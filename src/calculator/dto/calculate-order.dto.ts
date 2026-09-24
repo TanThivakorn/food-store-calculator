@@ -4,13 +4,6 @@ import { MAX_QUANTITY, MENU } from '../constants/menu.constant';
 import { OrderItems } from '../types/menu.type';
 
 export class CalculateOrderDto {
-  // Preserve dictionary keys so class-transformer cannot silently omit unknown names.
-  @Transform(
-    ({ obj }: { obj: Record<string, unknown> }): unknown => obj.items,
-    {
-      toClassOnly: true,
-    },
-  )
   @IsDefined()
   @IsObject()
   @ValidateBy({

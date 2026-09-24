@@ -1,4 +1,3 @@
-// Prices are integer satang (100 satang = 1 THB).
 export const MENU = {
   red: { price: 5_000, bundleEligible: false },
   green: { price: 4_000, bundleEligible: true },
@@ -9,5 +8,4 @@ export const MENU = {
   orange: { price: 12_000, bundleEligible: true },
 } as const satisfies Record<string, { price: number; bundleEligible: boolean }>;
 
-// Supported input limit to keep monetary arithmetic safely integral.
 export const MAX_QUANTITY = 1_000_000;
