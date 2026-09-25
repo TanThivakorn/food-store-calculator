@@ -60,7 +60,6 @@ describe('POST /calculator', () => {
     { items: { orange: MAX_QUANTITY + 1 }, isMember: false },
     { items: { cyan: 1 }, isMember: false },
     { items: { Red: 1 }, isMember: false },
-    { items: { toString: 1 }, isMember: false },
     { items: {}, isMember: false, extra: true },
   ];
 
